@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2FA28EEB-CFD9-4F4A-81BA-E03E5E14B99A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Application_Work_1</RootNamespace>
+    <AssemblyName>Application Work 1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonel.Designer.cs">
+      <DependentUpon>FrmPersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSiparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSiparis.Designer.cs">
+      <DependentUpon>FrmSiparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStok.Designer.cs">
+      <DependentUpon>FrmStok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUrunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUrunler.Designer.cs">
+      <DependentUpon>FrmUrunler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giriş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giriş.Designer.cs">
+      <DependentUpon>Giriş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="güvenlicikisonay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="güvenlicikisonay.Designer.cs">
+      <DependentUpon>güvenlicikisonay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PassBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassBox.Designer.cs">
+      <DependentUpon>PassBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlOperations.cs" />
+    <Compile Include="StokDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StokDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StokDBDataSetLaptop.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StokDBDataSetLaptop.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StokDBDataSetPersonel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StokDBDataSetPersonel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StokDBDataSetsiparistable2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StokDBDataSetsiparistable2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StokDBDataSetSiparisÜrün.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StokDBDataSetSiparisÜrün.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StokDBDataSetstokkk.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StokDBDataSetstokkk.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StokDBDataSettable3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StokDBDataSettable3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StokDBDataSetUrun4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StokDBDataSetUrun4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StokDBÜrünTable.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StokDBÜrünTable.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.xaml.cs">
+      <DependentUpon>UserControl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ÜrünEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜrünEkle.Designer.cs">
+      <DependentUpon>ÜrünEkle.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonel.resx">
+      <DependentUpon>FrmPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSiparis.resx">
+      <DependentUpon>FrmSiparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStok.resx">
+      <DependentUpon>FrmStok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUrunler.resx">
+      <DependentUpon>FrmUrunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giriş.resx">
+      <DependentUpon>Giriş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="güvenlicikisonay.resx">
+      <DependentUpon>güvenlicikisonay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassBox.resx">
+      <DependentUpon>PassBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ÜrünEkle.resx">
+      <DependentUpon>ÜrünEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="StokDBDataSet.xsc">
+      <DependentUpon>StokDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StokDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StokDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StokDBDataSet.xss">
+      <DependentUpon>StokDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StokDBDataSetLaptop.xsc">
+      <DependentUpon>StokDBDataSetLaptop.xsd</DependentUpon>
+    </None>
+    <None Include="StokDBDataSetLaptop.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StokDBDataSetLaptop.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StokDBDataSetLaptop.xss">
+      <DependentUpon>StokDBDataSetLaptop.xsd</DependentUpon>
+    </None>
+    <None Include="StokDBDataSetPersonel.xsc">
+      <DependentUpon>StokDBDataSetPersonel.xsd</DependentUpon>
+    </None>
+    <None Include="StokDBDataSetPersonel.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StokDBDataSetPersonel.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StokDBDataSetPersonel.xss">
+      <DependentUpon>StokDBDataSetPersonel.xsd</DependentUpon>
+    </None>
+    <None Include="StokDBDataSetsiparistable2.xsc">
+      <DependentUpon>StokDBDataSetsiparistable2.xsd</DependentUpon>
+    </None>
+    <None Include="StokDBDataSetsiparistable2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StokDBDataSetsiparistable2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StokDBDataSetsiparistable2.xss">
+      <DependentUpon>StokDBDataSetsiparistable2.xsd</DependentUpon>
+    </None>
+    <None Include="StokDBDataSetSiparisÜrün.xsc">
+      <DependentUpon>StokDBDataSetSiparisÜrün.xsd</DependentUpon>
+    </None>
+    <None Include="StokDBDataSetSiparisÜrün.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StokDBDataSetSiparisÜrün.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StokDBDataSetSiparisÜrün.xss">
+      <DependentUpon>StokDBDataSetSiparisÜrün.xsd</DependentUpon>
+    </None>
+    <None Include="StokDBDataSetstokkk.xsc">
+      <DependentUpon>StokDBDataSetstokkk.xsd</DependentUpon>
+    </None>
+    <None Include="StokDBDataSetstokkk.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StokDBDataSetstokkk.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StokDBDataSetstokkk.xss">
+      <DependentUpon>StokDBDataSetstokkk.xsd</DependentUpon>
+    </None>
+    <None Include="StokDBDataSettable3.xsc">
+      <DependentUpon>StokDBDataSettable3.xsd</DependentUpon>
+    </None>
+    <None Include="StokDBDataSettable3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StokDBDataSettable3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StokDBDataSettable3.xss">
+      <DependentUpon>StokDBDataSettable3.xsd</DependentUpon>
+    </None>
+    <None Include="StokDBDataSetUrun4.xsc">
+      <DependentUpon>StokDBDataSetUrun4.xsd</DependentUpon>
+    </None>
+    <None Include="StokDBDataSetUrun4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StokDBDataSetUrun4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StokDBDataSetUrun4.xss">
+      <DependentUpon>StokDBDataSetUrun4.xsd</DependentUpon>
+    </None>
+    <None Include="StokDBÜrünTable.xsc">
+      <DependentUpon>StokDBÜrünTable.xsd</DependentUpon>
+    </None>
+    <None Include="StokDBÜrünTable.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StokDBÜrünTable.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StokDBÜrünTable.xss">
+      <DependentUpon>StokDBÜrünTable.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11409720210206031908120.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="UserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secrecy-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
